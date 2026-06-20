@@ -1,0 +1,8 @@
+token/
+models/
+.venv/
+*.exe
+*.dll
+*.bin
+__pycache__/
+*.pyc
