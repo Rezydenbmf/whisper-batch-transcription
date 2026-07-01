@@ -1,6 +1,15 @@
-# whis — Whisper Batch Transcriber
+# Whisper Batch Transcription
+
+**Status:** in development (personal tool, used regularly)
+
+<!-- TODO: add a screenshot of the GUI and/or a sample .txt / .merged.txt
+     output snippet. None currently exist in this repo. -->
 
 A local Windows desktop tool for batch audio transcription with optional speaker diarization. Built around OpenAI Whisper (GPU-accelerated) and pyannote.audio, with a tkinter GUI for folder-based batch runs and standalone CLI scripts for single-file processing.
+
+## Problem it solves
+
+Transcribing meeting recordings and interviews one file at a time — and manually figuring out who said what — is tedious. This tool scans entire folders of audio, transcribes each file with Whisper, and optionally labels who's speaking and when, all locally with no cloud dependency beyond the one-time model download.
 
 ## What it does
 
@@ -101,4 +110,4 @@ The whisper.cpp C++ release binaries (`whisper-cli.exe`, `whisper-server.exe`, e
 
 ## Portfolio note
 
-Personal tool built for transcribing meeting recordings and interviews locally on Windows. Processes Polish-language audio with GPU acceleration and produces both plain transcripts and speaker-labelled merged files. No audio data, transcription outputs, or tokens are included in this repository.
+Personal tool built for transcribing meeting recordings and interviews locally on Windows. Processes Polish-language audio with GPU acceleration and produces both plain transcripts and speaker-labelled merged files. No audio data, transcription outputs, or tokens are included in this repository. No automated test suite yet — `diarization_test.py` is a manual verification script, not a unit-test harness.
