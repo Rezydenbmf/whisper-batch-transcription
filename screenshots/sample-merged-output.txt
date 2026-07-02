@@ -1,0 +1,5 @@
+[00000.00 - 00004.30] [SPEAKER_01] Cześć. Testuję teraz aplikacje do transkrypcji nagrań.
+[00004.60 - 00008.30] [SPEAKER_01] Powiedz mi, czy to nagranie brzmi wystarczająco naturalnie?
+[00009.30 - 00015.80] [SPEAKER_00] Jasne. Słyszę się wyraźnie. Ta funkcja nazywa się rozpozawaniem mówców.
+[00016.70 - 00023.10] [SPEAKER_01] Tak. Chciałbym sprawdzić, czy program dobrze rozpozna, że rozmawiają tutaj dwóch różne osoby.
+[00023.10 - 00031.30] [SPEAKER_00] Dokładnie tak. Program powinien oznaczać nasze wypowiedzi jako Speaker 0 i Speaker 1.

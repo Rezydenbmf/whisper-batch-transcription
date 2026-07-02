@@ -2,8 +2,17 @@
 
 **Status:** in development (personal tool, used regularly)
 
-<!-- TODO: add a screenshot of the GUI and/or a sample .txt / .merged.txt
-     output snippet. None currently exist in this repo. -->
+![Whisper Batch Transcriber after a successful run](screenshots/screenshot-whisp-result.png)
+
+*Successful batch run on GPU (CUDA), using the `medium` Whisper model with speaker diarization enabled — log shows model loading, transcription, the diarization pipeline running, and the final result `OK: 1 | POMINIĘTE: 0 | BŁĘDY: 0`. File paths are redacted.*
+
+Example lines from the resulting `.merged.txt` (see [sample-merged-output.txt](screenshots/sample-merged-output.txt) for the full file):
+
+```
+[00000.00 - 00004.30] [SPEAKER_01] Cześć. Testuję teraz aplikacje do transkrypcji nagrań.
+[00004.60 - 00008.30] [SPEAKER_01] Powiedz mi, czy to nagranie brzmi wystarczająco naturalnie?
+[00009.30 - 00015.80] [SPEAKER_00] Jasne. Słyszę się wyraźnie. Ta funkcja nazywa się rozpozawaniem mówców.
+```
 
 A local Windows desktop tool for batch audio transcription with optional speaker diarization. Built around OpenAI Whisper (GPU-accelerated) and pyannote.audio, with a tkinter GUI for folder-based batch runs and standalone CLI scripts for single-file processing.
 
